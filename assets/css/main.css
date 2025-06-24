@@ -1140,9 +1140,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1656,3 +1659,128 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+/* Academic Portfolio Custom Styles */
+
+/* Publication Items */
+.publication-item {
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	border-radius: 4px;
+	padding: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.publication-item h3 {
+	color: #ffffff;
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+.publication-item p {
+	margin-bottom: 0.5rem;
+}
+
+.publication-item strong {
+	color: #f2849e;
+}
+
+/* CV Entries */
+.cv-entry {
+	border-left: 3px solid #f2849e;
+	padding-left: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.cv-entry h3 {
+	color: #ffffff;
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+/* Teaching Entries */
+.teaching-entry {
+	background: rgba(255, 255, 255, 0.03);
+	border-radius: 4px;
+	padding: 1.25rem;
+	margin-bottom: 1.5rem;
+	border-left: 4px solid #f2849e;
+}
+
+.teaching-entry h3 {
+	color: #ffffff;
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin-bottom: 0.75rem;
+}
+
+/* Research Areas Styling */
+.research-areas h3 {
+	color: #f2849e;
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin-top: 1.5rem;
+	margin-bottom: 0.75rem;
+}
+
+.research-areas ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.research-areas li {
+	padding: 0.25rem 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.research-areas li:before {
+	content: "▸ ";
+	color: #f2849e;
+	font-weight: bold;
+	margin-right: 0.5rem;
+}
+
+/* Professional Links Enhancement */
+.icons li a {
+	transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.icons li a:hover {
+	color: #f2849e;
+	border-color: #f2849e;
+}
+
+/* Academic Metrics Styling */
+#publications ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+#publications ul li {
+	padding: 0.5rem 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#publications ul li:before {
+	content: "📊 ";
+	margin-right: 0.5rem;
+}
+
+/* Enhanced Button Styling for Academic Links */
+.button.primary.icon:before {
+	margin-right: 0.5rem;
+}
+
+/* Mobile Optimization for Academic Content */
+@media screen and (max-width: 480px) {
+	.publication-item, .cv-entry, .teaching-entry {
+		padding: 1rem;
+	}
+	
+	.cv-entry {
+		padding-left: 1rem;
+		border-left-width: 2px;
+	}
+}
